@@ -11,9 +11,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>flutter_clean_architecture_template</string>
+	<string>git_issues_form</string>
 	<key>CFBundleDisplayName</key>
-	<string>Flutter Clean Architecture Template</string>
+	<string>Git Issues Form</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

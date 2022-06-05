@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/domain/usecases/documentation_use_case.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/domain/usecases/feature_request_use_case.dart';
-import 'package:flutter_clean_architecture_template/injection.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/usecases/documentation_use_case.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/usecases/feature_request_use_case.dart';
+import 'package:git_issues_form/injection.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/entities/error_schema.dart';

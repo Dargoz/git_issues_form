@@ -1,6 +1,6 @@
-import 'package:flutter_clean_architecture_template/core/usecases/usecase.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/domain/entities/issue.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/domain/repositories/i_feedback_repository.dart';
+import 'package:git_issues_form/core/usecases/usecase.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/entities/issue.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/repositories/i_feedback_repository.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable

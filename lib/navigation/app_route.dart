@@ -1,5 +1,5 @@
 import 'package:auto_route/annotations.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/presentation/pages/feedback_page.dart';
+import 'package:git_issues_form/features/feedback_feature/presentation/pages/feedback_page.dart';
 
 @MaterialAutoRouter(
     replaceInRouteName: 'Page,Route',

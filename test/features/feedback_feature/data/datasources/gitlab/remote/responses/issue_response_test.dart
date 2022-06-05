@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_clean_architecture_template/features/feedback_feature/data/datasources/gitlab/remote/responses/issue_response.dart';
+import 'package:git_issues_form/features/feedback_feature/data/datasources/gitlab/remote/responses/issue_response.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 

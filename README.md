@@ -1,6 +1,6 @@
-# Flutter Clean Architecture Template
+# Git Issues Form
 
-Flutter Clean Architecture Project Template
+Flutter general widget for submitting git issues
 
 ## Getting Started
 
@@ -15,10 +15,3 @@ A few resources to get you started if this is your first Flutter project:
 
 ``flutter pub run build_runner build --delete-conflicting-outputs``
 
-## ⚠ Template Guideline ⚠
-After using this template to create your new repository, remember to :
-1. search globally using keyword `organization`, then rename/replace it with your `organization name`.
-2. search globally using keyword `flutter_clean_architecture_template`, then rename/replace with your `apps name` (⚠ ***must be snaked_case*** ⚠).
-    - ex: your_app_name
-3. search globally using keyword `flutterCleanArch`, then rename/replace with your `apps name` (⚠ ***can be camelCase*** ⚠).
-    - ex: flutterCleanArch

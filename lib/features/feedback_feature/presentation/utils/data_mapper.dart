@@ -1,5 +1,5 @@
-import 'package:flutter_clean_architecture_template/features/feedback_feature/domain/entities/issue.dart';
-import 'package:flutter_clean_architecture_template/features/feedback_feature/presentation/controller/feedback_model.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/entities/issue.dart';
+import 'package:git_issues_form/features/feedback_feature/presentation/controller/feedback_model.dart';
 
 extension DataMapper on FeedbackModel {
   Issue toIssue() {

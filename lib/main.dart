@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture_template/translation/app_translation.dart';
-import 'package:flutter_clean_architecture_template/navigation/app_route.gr.dart';
-import 'package:flutter_clean_architecture_template/injection.dart';
+import 'package:git_issues_form/translation/app_translation.dart';
+import 'package:git_issues_form/navigation/app_route.gr.dart';
+import 'package:git_issues_form/injection.dart';
 import 'package:get/get.dart';
 
 void main() {

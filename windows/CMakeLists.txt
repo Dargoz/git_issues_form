@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(flutter_clean_architecture_template LANGUAGES CXX)
+project(git_issues_form LANGUAGES CXX)
 
-set(BINARY_NAME "flutter_clean_architecture_template")
+set(BINARY_NAME "git_issues_form")
 
 cmake_policy(SET CMP0063 NEW)
 

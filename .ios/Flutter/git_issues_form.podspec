@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name                  = 'flutter_clean_architecture_template'
+  s.name                  = 'git_issues_form'
   s.version               = '0.0.1'
   s.summary               = 'Flutter module'
-  s.description           = 'Flutter module - flutter_clean_architecture_template'
+  s.description           = 'Flutter module - git_issues_form'
   s.homepage              = 'https://flutter.dev'
   s.license               = { :type => 'BSD' }
   s.author                = { 'Flutter Dev Team' => 'flutter-dev@googlegroups.com' }
