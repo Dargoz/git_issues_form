@@ -45,7 +45,7 @@ dependencies:
   google_sign_in: ^5.0.4
   package_info_plus: ^1.0.1
   freezed_annotation: ^1.1.0
-  dropdown_search: ^3.0.1
+  dropdown_search: ^5.0.1
   font_awesome_flutter: ^10.1.0
 
 

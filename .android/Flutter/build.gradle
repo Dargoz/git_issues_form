@@ -26,7 +26,7 @@ if (flutterVersionName == null) {
 apply plugin: 'com.android.library'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
-group 'com.dargoz.flutter_clean_architecture'
+group 'com.dargoz.git_issues_form'
 version '1.0'
 
 android {
