@@ -15,3 +15,20 @@ A few resources to get you started if this is your first Flutter project:
 
 ``flutter pub run build_runner build --delete-conflicting-outputs``
 
+## MacOS Build
+since this project combined flutter `application` and `module`, you need to comment out this from `pubspec.yaml` :
+
+from
+```yaml
+  module:
+    androidX: true
+    androidPackage: com.dargoz.git_issues_form
+    iosBundleIdentifier: com.dargoz.gitIssuesForm
+```
+to
+```yaml
+  #module:
+  #  androidX: true
+  #  androidPackage: com.dargoz.git_issues_form
+  #  iosBundleIdentifier: com.dargoz.gitIssuesForm
+```
