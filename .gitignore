@@ -54,10 +54,10 @@ Icon?
 /build/
 
 #dart auto generated
-*.gr.dart
-*.g.dart
-*.freezed.dart
-*.config.dart
+#*.gr.dart
+#*.g.dart
+#*.freezed.dart
+#*.config.dart
 
 
 # Web related
