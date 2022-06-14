@@ -1,4 +1,4 @@
-package com.dargoz.flutter_clean_architecture.host;
+package com.dargoz.git_issues_form.host;
 
 import io.flutter.embedding.android.FlutterActivity;
 
