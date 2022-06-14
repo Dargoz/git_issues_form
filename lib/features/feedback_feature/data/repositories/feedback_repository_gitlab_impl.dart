@@ -10,8 +10,14 @@ import '../../domain/repositories/i_feedback_repository.dart';
 @Named("gitlab")
 @Singleton(as: IFeedbackRepository)
 class FeedbackRepositoryGitlabImpl extends IFeedbackRepository {
-  final GitlabRestApiClient _gitlabRestApiService =
+  GitlabRestApiClient _gitlabRestApiService =
       GitlabRestApiClient(GitlabRestClientConfig.dio);
+
+  @override
+  void updateConfig(String? baseUrl) {
+    _gitlabRestApiService =
+        GitlabRestApiClient(GitlabRestClientConfig.dio, baseUrl: baseUrl);
+  }
 
   @override
   Future createAndIssue(Issue issue) async {

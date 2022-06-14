@@ -13,13 +13,14 @@ import 'success_widget.dart';
 import '../controller/feedback_controller.dart';
 
 class FeedbackWidget extends StatelessWidget {
-  FeedbackWidget({Key? key, required this.accessToken}) : super(key: key);
+  FeedbackWidget({Key? key, required this.accessToken, this.baseGitUrl}) : super(key: key);
   final FeedbackController controller = Get.put(FeedbackController());
   final String accessToken;
-
+  String? baseGitUrl;
   @override
   Widget build(BuildContext context) {
     gitlabToken = accessToken;
+    controller.updateConfig(baseGitUrl);
     return Obx(() {
       switch (controller.status.value) {
         case Status.initial:

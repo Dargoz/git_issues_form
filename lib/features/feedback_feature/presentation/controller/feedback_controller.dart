@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:git_issues_form/features/feedback_feature/domain/usecases/documentation_use_case.dart';
 import 'package:git_issues_form/features/feedback_feature/domain/usecases/feature_request_use_case.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/usecases/update_config_use_case.dart';
 import 'package:git_issues_form/injection.dart';
 import 'package:get/get.dart';
 
@@ -20,12 +21,17 @@ class FeedbackController extends GetxController {
   final UseCase _improvementUseCase = getIt<ImprovementUseCase>();
   final UseCase _featureRequestUseCase = getIt<FeatureRequestUseCase>();
   final UseCase _documentationUseCase = getIt<DocumentationUseCase>();
+  final UseCase _updateConfigUseCase = getIt<UpdateConfigUseCase>();
 
   var status = Status.initial.obs;
   var showError = false.obs;
   var label = Label.bug.name.obs;
   var issue = FeedbackModel(title: '').obs;
   var errorMessage = "";
+
+  Future<void> updateConfig(String? baseUrl) async {
+    _updateConfigUseCase.executeUseCase(baseUrl);
+  }
 
   Future<void> submit() async {
     if (kDebugMode) {

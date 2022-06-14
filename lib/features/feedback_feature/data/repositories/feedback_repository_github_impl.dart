@@ -13,6 +13,11 @@ class FeedbackRepositoryGithubImpl extends IFeedbackRepository {
       GithubRestApiClient(GithubRestClientConfig.dio);
 
   @override
+  void updateConfig(String? baseUrl) {
+
+  }
+
+  @override
   Future createAndIssue(Issue issue) async {
     print('create and issue $issue');
     final response = await client.createAndIssue(GithubMapper.fromIssue(issue));
