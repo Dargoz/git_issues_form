@@ -111,7 +111,6 @@ class FeedbackWidget extends StatelessWidget {
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.4,
                         child: DropdownSearch<String>(
-                            mode: Mode.MENU,
                             items: [
                               Label.bug.name,
                               Label.feature.name,
@@ -124,9 +123,9 @@ class FeedbackWidget extends StatelessWidget {
                                 if (value == Label.bug.name)
                                   const FaIcon(FontAwesomeIcons.bug),
                                 if (value == Label.feature.name)
-                                  const FaIcon(FontAwesomeIcons.magic),
+                                  const FaIcon(FontAwesomeIcons.wandMagic),
                                 if (value == Label.improvement.name)
-                                  const FaIcon(FontAwesomeIcons.tools),
+                                  const FaIcon(FontAwesomeIcons.screwdriver),
                                 if (value == Label.documentation.name)
                                   const FaIcon(FontAwesomeIcons.book),
                                 const Spacer(),

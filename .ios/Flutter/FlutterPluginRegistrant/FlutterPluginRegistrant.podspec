@@ -19,7 +19,5 @@ Depends on all your plugins, and provides a function to register them.
   s.static_framework    = true
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.dependency 'Flutter'
-  s.dependency 'google_sign_in_ios'
   s.dependency 'package_info_plus'
-  s.dependency 'shared_preferences_ios'
 end
