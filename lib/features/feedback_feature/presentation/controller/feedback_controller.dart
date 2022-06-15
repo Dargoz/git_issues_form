@@ -1,7 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:git_issues_form/features/feedback_feature/domain/usecases/documentation_use_case.dart';
-import 'package:git_issues_form/features/feedback_feature/domain/usecases/feature_request_use_case.dart';
-import 'package:git_issues_form/features/feedback_feature/domain/usecases/update_config_use_case.dart';
 import 'package:git_issues_form/injection.dart';
 import 'package:get/get.dart';
 
@@ -9,9 +6,13 @@ import '../../../../core/entities/error_schema.dart';
 import '../../../../core/entities/status.dart';
 import '../../../../core/usecases/usecase.dart';
 
+import '../../domain/entities/config.dart';
 import '../../domain/entities/label.dart';
 import '../../domain/usecases/bug_use_case.dart';
 import '../../domain/usecases/improvement_use_case.dart';
+import '../../domain/usecases/documentation_use_case.dart';
+import '../../domain/usecases/feature_request_use_case.dart';
+import '../../domain/usecases/update_config_use_case.dart';
 
 import '../utils/data_mapper.dart';
 import 'feedback_model.dart';
@@ -29,8 +30,8 @@ class FeedbackController extends GetxController {
   var issue = FeedbackModel(title: '').obs;
   var errorMessage = "";
 
-  Future<void> updateConfig(String? baseUrl) async {
-    _updateConfigUseCase.executeUseCase(baseUrl);
+  Future<void> updateConfig(Config config) async {
+    _updateConfigUseCase.executeUseCase(config);
   }
 
   Future<void> submit() async {

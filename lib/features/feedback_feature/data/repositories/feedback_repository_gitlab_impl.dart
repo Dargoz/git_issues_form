@@ -1,3 +1,5 @@
+import 'package:git_issues_form/features/feedback_feature/data/datasources/gitlab/gitlab_constants.dart';
+import 'package:git_issues_form/features/feedback_feature/domain/entities/config.dart';
 import 'package:injectable/injectable.dart';
 
 import '../datasources/gitlab/remote/gitlab_rest_client_config.dart';
@@ -14,15 +16,15 @@ class FeedbackRepositoryGitlabImpl extends IFeedbackRepository {
       GitlabRestApiClient(GitlabRestClientConfig.dio);
 
   @override
-  void updateConfig(String? baseUrl) {
+  void updateConfig(Config config) {
     _gitlabRestApiService =
-        GitlabRestApiClient(GitlabRestClientConfig.dio, baseUrl: baseUrl);
+        GitlabRestApiClient(GitlabRestClientConfig.dio, baseUrl: config.baseUrl);
   }
 
   @override
   Future createAndIssue(Issue issue) async {
     final response = await _gitlabRestApiService
-        .createAndIssue(GitlabMapper.fromIssue(issue));
+        .createAndIssue(config.projectId, GitlabMapper.fromIssue(issue));
     return response;
   }
 }

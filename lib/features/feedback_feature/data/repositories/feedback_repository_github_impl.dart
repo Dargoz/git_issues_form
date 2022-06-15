@@ -1,3 +1,4 @@
+import 'package:git_issues_form/features/feedback_feature/domain/entities/config.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../domain/entities/issue.dart';
@@ -13,7 +14,7 @@ class FeedbackRepositoryGithubImpl extends IFeedbackRepository {
       GithubRestApiClient(GithubRestClientConfig.dio);
 
   @override
-  void updateConfig(String? baseUrl) {
+  void updateConfig(Config config) {
 
   }
 

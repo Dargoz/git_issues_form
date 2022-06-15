@@ -18,7 +18,7 @@ class _GitlabRestApiClient implements GitlabRestApiClient {
   String? baseUrl;
 
   @override
-  Future<IssueResponse> createAndIssue(issue) async {
+  Future<IssueResponse> createAndIssue(projectId, issue) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -27,7 +27,7 @@ class _GitlabRestApiClient implements GitlabRestApiClient {
     final _result = await _dio.fetch<Map<String, dynamic>>(
         _setStreamType<IssueResponse>(
             Options(method: 'POST', headers: _headers, extra: _extra)
-                .compose(_dio.options, 'projects/27745171/issues',
+                .compose(_dio.options, 'projects/${projectId}/issues',
                     queryParameters: queryParameters, data: _data)
                 .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
     final value = IssueResponse.fromJson(_result.data!);
