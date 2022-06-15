@@ -17,6 +17,7 @@ class FeedbackRepositoryGitlabImpl extends IFeedbackRepository {
 
   @override
   void updateConfig(Config config) {
+    defaultConfig = config;
     _gitlabRestApiService =
         GitlabRestApiClient(GitlabRestClientConfig.dio, baseUrl: config.baseUrl);
   }
@@ -24,7 +25,7 @@ class FeedbackRepositoryGitlabImpl extends IFeedbackRepository {
   @override
   Future createAndIssue(Issue issue) async {
     final response = await _gitlabRestApiService
-        .createAndIssue(config.projectId, GitlabMapper.fromIssue(issue));
+        .createAndIssue(defaultConfig.projectId, GitlabMapper.fromIssue(issue));
     return response;
   }
 }

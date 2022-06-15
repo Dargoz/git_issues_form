@@ -11,7 +11,7 @@ class GitlabHttpInterceptor extends Interceptor {
           'baseUrl : ${options.baseUrl} entity : ${options.data}');
     }
 
-    options.headers['Authorization'] = 'Bearer ${config.accessToken}';
+    options.headers['Authorization'] = 'Bearer ${defaultConfig.accessToken}';
 
     if (kDebugMode) {
       print('header : ${options.headers} entity : ${options.data}');

@@ -15,7 +15,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: FeedbackWidget(
         accessToken: 'glpat-6VtJb2k-Ns8SXGApxzbb',
-        projectId: config.projectId,
+        projectId: defaultConfig.projectId,
       ),
     );
   }
