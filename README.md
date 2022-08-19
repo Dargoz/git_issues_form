@@ -1,15 +1,40 @@
 # Git Issues Form
 
-Flutter general widget for submitting git issues
+Flutter general widget for submitting git issues based on common template.
 
-## Getting Started
+![sample](./doc/screenshot_preview_19082022.jpg)
 
-This project is a starting point for a Flutter application.
+this widget need 3 required parameter:
+- Access Token : used to authenticated with git services (gitlab / github)
+- Project ID : The global ID or URL-encoded path of the project owned by the authenticated user
+- baseGitUrl : to specify which provider will used as git service API (default : 'https://gitlab.com/api/v4/')
 
-A few resources to get you started if this is your first Flutter project:
+usage example:
+```dart
+import 'package:git_issues_form/features/feedback_feature/presentation/widgets/feedback_widget.dart';
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('MyApp'),
+      ),
+      body: FeedbackWidget(
+        accessToken: '[YOUR_ACCESS_TOKEN]',
+        projectId: '[YOUR_GIT_PROJECT_ID]',
+        baseGitUrl: 'https://gitlab.com/api/v4/',
+      ),
+    );
+  }
+}
+```
+
+
+# Build Project
+This section explain what you need to know if you want to clone and build this project on your own.
 
 ## Build Generated Codes
 
