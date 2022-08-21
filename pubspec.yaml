@@ -1,25 +1,19 @@
 name: git_issues_form
-description: Git Issues Form project
-homepage: https://github.com/Dargoz/git_issues_form
-# The following line prevents the package from being accidentally published to
-# pub.dev using `pub publish`. This is preferred for private packages.
-#publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: Flutter general widget for submitting git issues based on common template.
+homepage: https://github.com/dargoz/git_issues_form
+repository: https://github.com/dargoz/git_issues_form/tree/main
+issue_tracker: https://github.com/dargoz/git_issues_form/issues
+api: https://pub.dev/documentation/git_issues_form/latest/
+version: 1.0.0-alpha02
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-#
-# This version is used _only_ for the Runner app, which is used if you just do
-# a `flutter run` or a `flutter make-host-app-editable`. It has no impact
-# on any other native host app that you embed your Flutter project into.
-version: 1.0.0-alpha01
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
 
 environment:
   flutter: ">=3.0.0"
@@ -39,6 +33,7 @@ dependencies:
   retrofit: '>=3.0.0 <4.0.0'
   get_it: ^7.2.0
   get: ^4.6.3
+  dio: ^4.0.6
   injectable: ^1.5.3
   package_info_plus: ^1.4.2
   dropdown_search: ^5.0.1

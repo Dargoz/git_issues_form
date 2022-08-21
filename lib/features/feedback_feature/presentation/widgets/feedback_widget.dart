@@ -21,12 +21,13 @@ class FeedbackWidget extends StatelessWidget {
       : super(key: key);
   final FeedbackController controller = Get.put(FeedbackController());
   final String accessToken;
-  String? baseGitUrl;
+  final String? baseGitUrl;
   final String projectId;
 
   @override
   Widget build(BuildContext context) {
-    controller.updateConfig(Config(projectId: projectId, accessToken: accessToken, baseUrl: baseGitUrl));
+    controller.updateConfig(Config(
+        projectId: projectId, accessToken: accessToken, baseUrl: baseGitUrl));
     return Obx(() {
       switch (controller.status.value) {
         case Status.initial:

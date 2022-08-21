@@ -1,4 +1,3 @@
-
 enum Status {
   initial,
   loading,

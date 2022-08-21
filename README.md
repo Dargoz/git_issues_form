@@ -2,7 +2,7 @@
 
 Flutter general widget for submitting git issues based on common template.
 
-![sample](./doc/screenshot_preview_19082022.jpg)
+![sample](https://raw.githubusercontent.com/dargoz/git_issues_form/main/doc/screenshot_preview_19082022.jpg)
 
 this widget need 3 required parameter:
 - Access Token : used to authenticated with git services (gitlab / github)
