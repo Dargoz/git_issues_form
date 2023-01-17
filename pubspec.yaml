@@ -35,7 +35,7 @@ dependencies:
   get: ^4.6.3
   dio: ^4.0.6
   injectable: ^1.5.3
-  package_info_plus: ^1.4.2
+  package_info_plus: ^3.0.2
   dropdown_search: ^5.0.1
   font_awesome_flutter: ^10.1.0
 
